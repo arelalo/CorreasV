@@ -1,10 +1,7 @@
 package com.arelalo.correasv;
 
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +12,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
@@ -24,6 +27,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private static final String[] SPINNER_DATA = new String[] { "Tipo C", "Tipo B", "Tipo A" };
     public double resultado, pulgadas, tension, longitudresultado,lr ;
     public CheckBox checktensas;
+
+    private static final String TAG = "MainActivity";
+
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Spinner spn = (Spinner) findViewById(R.id.spinner);
         spn.setOnItemSelectedListener(this);
         spn.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, SPINNER_DATA));
+
+        mAdView = findViewById(R.id.AdView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+
 
 
         buttonCalcular.setOnClickListener(new View.OnClickListener() {

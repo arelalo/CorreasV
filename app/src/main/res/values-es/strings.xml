@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Correas Trapezoidales</string>
     <string name="P260">260</string>
-    <string name="Calcular">Calculate</string>
+    <string name="Calcular">CALCULAR</string>
     <string name="Descripcion">Esquema</string>
-    <string name="Tensas">Tight</string>
-    <string name="Distanciaejes">Measure between shaft (mm)</string>
+    <string name="Tensas">Tensas</string>
+    <string name="Distanciaejes">Distancia entre ejes (mm)</string>
     <string name="banner_ad_unit_id">ca-app-pub-5749848975087605/7473259827</string>
 </resources>
 
