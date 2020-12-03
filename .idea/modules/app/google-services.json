@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "36320133629",
+    "firebase_url": "https://correasv-5fd50.firebaseio.com",
+    "project_id": "correasv-5fd50",
+    "storage_bucket": "correasv-5fd50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36320133629:android:49b2320c88c0ea45055994",
+        "android_client_info": {
+          "package_name": "com.arelalo.correasv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36320133629-grgi5e0mgkshfo212kcsgd9edhc0mn6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arelalo.correasv",
+            "certificate_hash": "852850aedc16f69208507dd16e19aec29f42ccd3"
+          }
+        },
+        {
+          "client_id": "36320133629-npa8midh31ogudsnui9t583vq92nuqeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKt1FJsRyWpa3Mz8BFjznbStiNdZ5jALA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36320133629-npa8midh31ogudsnui9t583vq92nuqeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
