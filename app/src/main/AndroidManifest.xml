@@ -22,7 +22,8 @@
         android:name="com.google.android.gms.ads.APPLICATION_ID"/>
 
         <activity android:name=".MainActivity"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

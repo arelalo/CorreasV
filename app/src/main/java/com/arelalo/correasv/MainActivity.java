@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
     private void Calcularlongitud() {
-        double Distancia1int = Integer.valueOf(etDistancia1);
+        double Distancia1int = Double.parseDouble(etDistancia1);
         int Polea1int = Integer.valueOf(Polea1);
         int Polea2int = Integer.valueOf(Polea2);
 

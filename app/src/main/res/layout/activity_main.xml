@@ -17,8 +17,8 @@
 
         <EditText
             android:id="@+id/etDistancia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="288dp"
+            android:layout_height="46dp"
             android:ems="10"
             android:hint="@string/Distanciaejes"
             android:inputType="numberDecimal"
@@ -43,8 +43,9 @@
         <EditText
             android:id="@+id/etPolea1"
             android:layout_width="190dp"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
 
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/P260"
             android:inputType="numberDecimal"
@@ -54,13 +55,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.0"
-            android:autofillHints="" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/etPolea2"
             android:layout_width="190dp"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/P260"
@@ -85,8 +85,8 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="119dp"
+            android:layout_height="37dp"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toStartOf="@+id/checktensas"
             app:layout_constraintHorizontal_bias="0.453"
@@ -95,13 +95,14 @@
 
         <CheckBox
             android:id="@+id/checktensas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_width="81dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
             android:checked="true"
             android:text="@string/Tensas"
             app:buttonTint="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPolea2" />
 

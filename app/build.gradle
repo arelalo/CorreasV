@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
 android {
     signingConfigs {
@@ -10,14 +10,13 @@ android {
             keyAlias 'upload'
         }
     }
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.arelalo.correasv"
-        minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 3
+        versionName "1.0.2"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
@@ -30,13 +29,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.google.android.gms:play-services-ads:19.4.0'
-    implementation 'com.google.firebase:firebase-ads:19.4.0'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+    implementation 'com.google.firebase:firebase-ads:21.5.0'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.3.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //testImplementation 'junit:junit:4.12'
 }
